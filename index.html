@@ -9,47 +9,50 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #0a0a0a;
+    background: #070707;
     color: white;
 }
 
 /* TOP BAR */
 .topbar {
     background: #000;
-    padding: 10px;
     text-align: center;
-    font-size: 14px;
-    color: #c9a227;
+    padding: 10px;
+    font-size: 13px;
+    color: #d4af37;
+    letter-spacing: 1px;
 }
 
 /* HERO */
 .hero {
-    height: 90vh;
+    height: 92vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
-    url('https://images.unsplash.com/photo-1517832606299-7ae9b720a186') center/cover;
+    background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.95)),
+    url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1') center/cover;
 }
 
 .hero h1 {
-    font-size: 50px;
+    font-size: 60px;
     margin: 0;
-    letter-spacing: 2px;
+    color: #d4af37;
+    letter-spacing: 3px;
 }
 
 .hero p {
     color: #ddd;
-    margin-top: 10px;
     font-size: 18px;
+    margin-top: 10px;
 }
 
 .btn {
     margin-top: 20px;
-    padding: 14px 22px;
-    background: #c9a227;
+    padding: 14px 24px;
+    background: #d4af37;
     color: black;
     font-weight: bold;
     text-decoration: none;
@@ -63,37 +66,46 @@ body {
 
 /* SECTIONS */
 section {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding: 60px 20px;
 }
 
 h2 {
-    color: #c9a227;
-    margin-bottom: 15px;
+    color: #d4af37;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
-/* SERVICES */
+/* GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 15px;
 }
 
+/* CARDS */
 .card {
-    background: #151515;
+    background: #111;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #222;
+    text-align: center;
+}
+
+.price {
+    color: #d4af37;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 /* BOOKING */
 .booking {
-    background: #151515;
+    background: #111;
     padding: 25px;
     border-radius: 10px;
     text-align: center;
-    border: 1px solid #333;
+    border: 1px solid #222;
 }
 
 .badge {
@@ -105,17 +117,39 @@ h2 {
     border-radius: 5px;
 }
 
-/* CONTACT BAR */
-.contactbar {
-    background: #000;
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid #222;
+/* GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
 }
 
-.small {
-    color: #aaa;
-    font-size: 14px;
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #222;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 14px 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #777;
+    border-top: 1px solid #222;
 }
 </style>
 
@@ -128,35 +162,45 @@ h2 {
 </div>
 
 <div class="hero">
-    <h1>T FADE BARBER SHOP</h1>
-    <p>Premium fades. Clean cuts. Sharp results.</p>
-    <a class="btn" href="tel:07429666610">BOOK / CALL NOW</a>
+    <h1>T FADE</h1>
+    <p>Luxury fades. Precision cuts. Premium grooming experience.</p>
+    <a class="btn" href="tel:07429666610">BOOK NOW</a>
 </div>
 
 <section>
-    <h2>About The Shop</h2>
-    <p class="small">
-        T Fade Barber Shop in Cannock delivers modern fades, beard styling, and professional grooming.
-        We focus on precision, clean results, and customer satisfaction every time.
+    <h2>About Us</h2>
+    <p style="color:#bbb;">
+        T Fade Barber Shop in Cannock delivers premium grooming with sharp attention to detail.
+        We specialise in modern fades, beard styling, and luxury barber experiences.
     </p>
 </section>
 
 <section>
     <h2>Our Services</h2>
     <div class="grid">
-        <div class="card">Skin Fade</div>
-        <div class="card">Taper Fade</div>
-        <div class="card">Beard Trim</div>
-        <div class="card">Kids Haircut</div>
-        <div class="card">Hot Towel Shave</div>
-        <div class="card">Full Grooming</div>
+        <div class="card">Skin Fade<div class="price">£15</div></div>
+        <div class="card">Taper Fade<div class="price">£13</div></div>
+        <div class="card">Beard Trim<div class="price">£10</div></div>
+        <div class="card">Kids Cut<div class="price">£12</div></div>
+        <div class="card">Hot Towel Shave<div class="price">£18</div></div>
+        <div class="card">Full Groom<div class="price">£25</div></div>
+    </div>
+</section>
+
+<section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033">
+        <img src="https://images.unsplash.com/photo-1599351431613-18ef1fdd27e1">
+        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937">
     </div>
 </section>
 
 <section>
     <h2>Booking</h2>
     <div class="booking">
-        <p>Online booking system is currently being built.</p>
+        <p>Online booking system is currently under development.</p>
         <span class="badge">UNDER CONSTRUCTION</span>
         <br><br>
         <a class="btn" href="tel:07429666610">CALL TO BOOK</a>
@@ -165,17 +209,19 @@ h2 {
 
 <section>
     <h2>Location</h2>
-    <p class="small">148 Cannock Rd, Cannock WS11 5BZ</p>
     <a class="btn" target="_blank"
     href="https://www.google.com/maps?q=148+Cannock+Rd,+Cannock+WS11+5BZ">
         OPEN IN GOOGLE MAPS
     </a>
 </section>
 
-<div class="contactbar">
-    <p>📞 07429 666610</p>
-    <p class="small">© T Fade Barber Shop</p>
-</div>
+<footer>
+    © T Fade Barber Shop | Cannock
+</footer>
+
+<a class="whatsapp" href="https://wa.me/447429666610" target="_blank">
+    WhatsApp
+</a>
 
 </body>
 </html>
