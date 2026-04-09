@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>T Fade Barber Shop | Cannock</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+/* TOP BAR */
+.topbar {
+    background: #000;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #c9a227;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+    url('https://images.unsplash.com/photo-1517832606299-7ae9b720a186') center/cover;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    color: #ddd;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 14px 22px;
+    background: #c9a227;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* SECTIONS */
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+h2 {
+    color: #c9a227;
+    margin-bottom: 15px;
+}
+
+/* SERVICES */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: #151515;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #222;
+}
+
+/* BOOKING */
+.booking {
+    background: #151515;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 10px;
+    background: red;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+/* CONTACT BAR */
+.contactbar {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+
+.small {
+    color: #aaa;
+    font-size: 14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="topbar">
+📍 148 Cannock Rd, Cannock WS11 5BZ | 📞 07429 666610
+</div>
+
+<div class="hero">
+    <h1>T FADE BARBER SHOP</h1>
+    <p>Premium fades. Clean cuts. Sharp results.</p>
+    <a class="btn" href="tel:07429666610">BOOK / CALL NOW</a>
+</div>
+
+<section>
+    <h2>About The Shop</h2>
+    <p class="small">
+        T Fade Barber Shop in Cannock delivers modern fades, beard styling, and professional grooming.
+        We focus on precision, clean results, and customer satisfaction every time.
+    </p>
+</section>
+
+<section>
+    <h2>Our Services</h2>
+    <div class="grid">
+        <div class="card">Skin Fade</div>
+        <div class="card">Taper Fade</div>
+        <div class="card">Beard Trim</div>
+        <div class="card">Kids Haircut</div>
+        <div class="card">Hot Towel Shave</div>
+        <div class="card">Full Grooming</div>
+    </div>
+</section>
+
+<section>
+    <h2>Booking</h2>
+    <div class="booking">
+        <p>Online booking system is currently being built.</p>
+        <span class="badge">UNDER CONSTRUCTION</span>
+        <br><br>
+        <a class="btn" href="tel:07429666610">CALL TO BOOK</a>
+    </div>
+</section>
+
+<section>
+    <h2>Location</h2>
+    <p class="small">148 Cannock Rd, Cannock WS11 5BZ</p>
+    <a class="btn" target="_blank"
+    href="https://www.google.com/maps?q=148+Cannock+Rd,+Cannock+WS11+5BZ">
+        OPEN IN GOOGLE MAPS
+    </a>
+</section>
+
+<div class="contactbar">
+    <p>📞 07429 666610</p>
+    <p class="small">© T Fade Barber Shop</p>
+</div>
+
+</body>
+</html>
